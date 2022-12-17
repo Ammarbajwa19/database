@@ -4,8 +4,6 @@ class databaseHelper {
   static const _databaseName = 'app.db';
   static const _databaseVersion = 1;
 
-  var join;
-
   databaseHelper._internal();
   static final databaseHelper databasehelper = databaseHelper._internal();
   static databaseHelper get instance => databasehelper;
@@ -34,3 +32,5 @@ class databaseHelper {
         ')');
   }
 }
+
+join(String dbPath, Database? database) {}
